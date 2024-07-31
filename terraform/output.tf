@@ -2,6 +2,10 @@ output "autonomous_data_warehouse_admin_password" {
   value = random_string.autonomous_data_warehouse_admin_password.result
 }
 
+# output "output_compartment_ocid" {
+#   value = var.compartment_ocid
+# }
+
 output "autonomous_data_warehouse_high_connection_string" {
   value = lookup(
     oci_database_autonomous_database.generated_database_autonomous_database.connection_strings[0].all_connection_strings,
@@ -12,7 +16,7 @@ output "autonomous_data_warehouse_high_connection_string" {
 
 output "ssh_to_instance" {
   description = "convenient command to ssh to the instance"
-  value       = "ssh -o ServerAliveInterval=10 opc@${oci_core_instance.generated_oci_core_instance.public_ip}"
+  value       = "ssh -o ServerAliveInterval=10 ubuntu@${oci_core_instance.generated_oci_core_instance.public_ip}"
 }
 
 #output "sqlplus_to_oracle" {
