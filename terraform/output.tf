@@ -2,10 +2,6 @@ output "autonomous_data_warehouse_admin_password" {
   value = random_string.autonomous_data_warehouse_admin_password.result
 }
 
-# output "output_compartment_ocid" {
-#   value = var.compartment_ocid
-# }
-
 output "autonomous_data_warehouse_high_connection_string" {
   value = lookup(
     oci_database_autonomous_database.generated_database_autonomous_database.connection_strings[0].all_connection_strings,
