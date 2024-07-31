@@ -7,6 +7,8 @@ import shutil
 import time
 from itertools import combinations
 from typing import List, Tuple, ClassVar
+import platform
+
 
 import cohere
 import gradio as gr
@@ -46,6 +48,9 @@ body {
 _ = load_dotenv(find_dotenv())
 
 DEFAULT_COLLECTION_NAME = os.environ["DEFAULT_COLLECTION_NAME"]
+
+if platform.system() == 'Linux':
+    oracledb.init_oracle_client(lib_dir="/u01/aipoc/instantclient_23_5")
 
 # 初始化一个数据库连接
 pool = oracledb.create_pool(
