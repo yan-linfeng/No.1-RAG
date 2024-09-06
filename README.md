@@ -46,3 +46,24 @@ echo <your_salt> | openssl rand -base64 32
 ## Change Region Image ID
 
 [https://docs.oracle.com/en-us/iaas/images/image/50cf60da-4374-44e2-ab38-70185991f833/index.htm](https://docs.oracle.com/en-us/iaas/images/image/50cf60da-4374-44e2-ab38-70185991f833/index.htm)
+
+## Deploy Using Oracle Resource Manager
+
+1. Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/oracle-quickstart/oci-redis/releases/latest/download/oci-redis-stack-latest.zip)
+
+
+    If you aren't already signed in, when prompted, enter the tenancy and user credentials.
+
+2. Review and accept the terms and conditions.
+
+3. Select the region where you want to deploy the stack.
+
+4. Follow the on-screen prompts and instructions to create the stack.
+
+5. After creating the stack, click **Terraform Actions**, and select **Plan**.
+
+6. Wait for the job to be completed, and review the plan.
+
+    To make any changes, return to the Stack Details page, click **Edit Stack**, and make the required changes. Then, run the **Plan** action again.
+
+7. If no further changes are necessary, return to the Stack Details page, click **Terraform Actions**, and select **Apply**.
