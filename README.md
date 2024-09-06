@@ -49,7 +49,7 @@ echo <your_salt> | openssl rand -base64 32
 
 ## Deploy Using Oracle Resource Manager
 
-1. Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/oracle-quickstart/oci-redis/releases/latest/download/oci-redis-stack-latest.zip)
+1. Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/yan-linfeng/No.1-RAG/releases/latest/download/rag-stack.zip)
 
 
     If you aren't already signed in, when prompted, enter the tenancy and user credentials.
